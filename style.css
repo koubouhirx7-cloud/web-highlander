@@ -1128,13 +1128,13 @@ ul {
 
 .timeline {
     position: relative;
-    padding-left: 50px;
+    padding-left: 80px;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
-    left: 14px;
+    left: 35px;
     top: 0;
     bottom: 0;
     width: 2px;
@@ -1149,7 +1149,7 @@ ul {
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: -43px;
+    left: -52px;
     top: 8px;
     width: 16px;
     height: 16px;
