@@ -17,6 +17,14 @@ if (mobileToggle) {
         navLinks.classList.toggle('active');
         mobileToggle.classList.toggle('active');
     });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            mobileToggle.classList.remove('active');
+        });
+    });
 }
 
 // Scroll Reveal Animation (Simple Implementation)
