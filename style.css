@@ -718,6 +718,8 @@ ul {
     border-radius: 20px;
     padding: 60px 40px;
     transition: 0.4s;
+    position: relative;
+    /* Ensure child absolute elements are positioned correctly */
 }
 
 .pricing-card:hover {
@@ -991,13 +993,24 @@ ul {
 @media (max-width: 900px) {
 
     .concept-grid,
-    .service-row {
+    .service-row,
+    .footer-grid {
         flex-direction: column;
         text-align: center;
+        gap: 40px;
     }
 
     .service-row.reverse {
         flex-direction: column;
+    }
+
+    .footer-links ul {
+        justify-content: center;
+    }
+
+    .footer-brand div {
+        margin: 20px auto !important;
+        /* Center the map iframe */
     }
 
     .nav-links {
@@ -1472,6 +1485,21 @@ ul {
         margin-bottom: 30px;
     }
 
+    /* Reduce vertical gaps on mobile so content isn't missed */
+    .section {
+        padding: 60px 0;
+    }
+
+    .services-container {
+        gap: 60px;
+    }
+
+    .pricing-grid {
+        gap: 30px;
+        margin-top: 40px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
     .detail-title {
         font-size: 2.5rem;
     }
@@ -1603,11 +1631,36 @@ ul {
     margin-top: 40px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+    .portfolio-card {
+        flex: 0 0 280px;
+        /* Smaller cards for mobile */
+        margin-right: 20px;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-280px * 3 - 20px * 3));
+        }
+    }
+
+    .advice-card {
+        flex-direction: column;
+        padding: 30px;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
     .advice-grid {
         grid-template-columns: 1fr;
     }
 }
+
 
 .advice-card {
     background: var(--bg-darker);
