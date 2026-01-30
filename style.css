@@ -302,6 +302,14 @@ ul {
     padding: var(--section-padding);
 }
 
+#works.section {
+    padding-bottom: 40px;
+}
+
+#qa.section {
+    padding-top: 40px;
+}
+
 .section-badge {
     color: var(--primary);
     text-transform: uppercase;
