@@ -291,7 +291,8 @@
             <!-- Portfolio Carousel -->
             <div class="portfolio-carousel-container">
                 <div class="portfolio-carousel" id="portfolioCarousel">
-                    <a href="https://www.bigrock-bike.jp/" target="_blank" class="portfolio-card">
+                    <a href="https://www.bigrock-bike.jp/" target="_blank" class="portfolio-card"
+                        data-genre="web branding">
                         <div class="portfolio-image">
                             <img src="bigrock_web.png" alt="BigRock Japan">
                         </div>
@@ -302,7 +303,7 @@
                             <p>海外ブランドの日本国内展開をサポート。カタログ、カタログの日本語化から、世界観を壊さないWebデザイン、MEO対策までトータルで担当しました。</p>
                         </div>
                     </a>
-                    <a href="#" class="portfolio-card">
+                    <a href="#" class="portfolio-card" data-genre="web content">
                         <div class="portfolio-image">
                             <img src="hero_ride.jpg" alt="HighLander WEB部">
                         </div>
@@ -313,7 +314,7 @@
                         </div>
                     </a>
                     <a href="https://highlander-bicycle.vercel.app/project-sasayama.html" target="_blank"
-                        class="portfolio-card">
+                        class="portfolio-card" data-genre="regional">
                         <div class="portfolio-image">
                             <img src="shop_exterior.jpg" alt="地域活性化プロジェクト">
                         </div>
@@ -324,7 +325,8 @@
                             <p>Googleビジネスプロフィールの最適化により、観光客の来店率を向上。SNSでの発信力強化と連動させ、地域の魅力をデジタルで加速させています。</p>
                         </div>
                     </a>
-                    <a href="https://www.norude-sasayama.com" target="_blank" class="portfolio-card">
+                    <a href="https://www.norude-sasayama.com" target="_blank" class="portfolio-card"
+                        data-genre="web regional branding">
                         <div class="portfolio-image">
                             <img src="norude_web.png" alt="Noru de Sasayama">
                         </div>
@@ -336,7 +338,7 @@
                         </div>
                     </a>
                     <a href="https://highlander-bicycle.vercel.app/service.html#business" target="_blank"
-                        class="portfolio-card">
+                        class="portfolio-card" data-genre="regional">
                         <div class="portfolio-image">
                             <img src="archive_map.jpg" alt="観光・サイクリングマップ制作">
                         </div>
@@ -348,7 +350,7 @@
                         </div>
                     </a>
                     <a href="https://highlander-bicycle.vercel.app/project-shiramine.html" target="_blank"
-                        class="portfolio-card">
+                        class="portfolio-card" data-genre="branding">
                         <div class="portfolio-image">
                             <img src="archive_shiramine.jpg" alt="石川県白山市白峰：E-Bike Adventures">
                         </div>
@@ -360,7 +362,7 @@
                         </div>
                     </a>
                     <a href="https://highlander-bicycle.vercel.app/project-kuraft.html" target="_blank"
-                        class="portfolio-card">
+                        class="portfolio-card" data-genre="branding">
                         <div class="portfolio-image">
                             <img src="archive_kuraft.png" alt="燕三条 kuraft：プロフェッショナル・コンサルティング">
                         </div>
@@ -372,7 +374,7 @@
                         </div>
                     </a>
                     <a href="https://highlander-bicycle.vercel.app/project-school.html" target="_blank"
-                        class="portfolio-card">
+                        class="portfolio-card" data-genre="content">
                         <div class="portfolio-image">
                             <img src="archive_school.jpg" alt="教育支援：小学校での理科授業サポート">
                         </div>
@@ -389,10 +391,11 @@
                 </div>
 
                 <div class="portfolio-genres">
-                    <a href="standard-web.html" class="genre-link">Webサイト制作</a>
-                    <a href="sync-session.html" class="genre-link">ブランディング・企画</a>
-                    <a href="#services" class="genre-link">行政・地域支援</a>
-                    <a href="orbital-launch.html" class="genre-link">コンテンツ制作</a>
+                    <button class="genre-link active" data-filter="all">すべて</button>
+                    <button class="genre-link" data-filter="web">Webサイト制作</button>
+                    <button class="genre-link" data-filter="branding">ブランディング・企画</button>
+                    <button class="genre-link" data-filter="regional">行政・地域支援</button>
+                    <button class="genre-link" data-filter="content">コンテンツ制作</button>
                 </div>
             </div>
         </div>

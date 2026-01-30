@@ -80,3 +80,36 @@ if (carousel) {
         carousel.scrollLeft = scrollLeft - walk;
     });
 }
+
+// Portfolio Filtering
+const filterButtons = document.querySelectorAll('.genre-link');
+const portfolioCards = document.querySelectorAll('.portfolio-card');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Update active button
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        const filter = button.getAttribute('data-filter');
+
+        // Filter cards
+        portfolioCards.forEach(card => {
+            const genres = card.getAttribute('data-genre') || '';
+            if (filter === 'all' || genres.includes(filter)) {
+                card.classList.remove('hidden');
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+
+        // Reset scroll position
+        if (carousel) {
+            carousel.scrollTo({
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+

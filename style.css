@@ -1581,8 +1581,14 @@ ul {
     border-radius: 20px;
     overflow: hidden;
     border: 1px solid var(--glass-border);
-    transition: 0.4s;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     scroll-snap-align: start;
+}
+
+.portfolio-card.hidden {
+    display: none;
+    opacity: 0;
+    transform: scale(0.9);
 }
 
 .portfolio-image {
@@ -1628,9 +1634,12 @@ ul {
     color: var(--text-main);
     transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+    font-family: inherit;
 }
 
-.genre-link:hover {
+.genre-link:hover,
+.genre-link.active {
     background: var(--primary);
     color: #fff;
     border-color: var(--primary);
