@@ -1583,7 +1583,7 @@ ul {
     }
 
     100% {
-        transform: translateX(calc(-350px * 3 - 30px * 3));
+        transform: translateX(calc(-350px * 4 - 30px * 4));
     }
 }
 
